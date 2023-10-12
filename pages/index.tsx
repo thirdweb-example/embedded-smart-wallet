@@ -19,6 +19,7 @@ const Home: NextPage = () => {
   const { contract } = useContract(editionDropAddress);
   const { data, isLoading, error } = useOwnedNFTs(contract, address);
   return (
+
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.header}>
@@ -51,6 +52,9 @@ const Home: NextPage = () => {
                 >
                   Claim Edition NFT
                 </Web3Button>
+                <br /><br />
+                {/* replace XXXXXXXX with your client id */}
+                <iframe id="export-iframe" width="500" height="360" src="https://ews.thirdweb.com/sdk/2022-08-12/embedded-wallet/export?clientId=XXXXXXXX" />
               </div>
             ) : (
               <p>Please log in with you Google account or email</p>
