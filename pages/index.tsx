@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 </Web3Button>
                 <br /><br />
                 {/* replace XXXXXXXX with your client id */}
-                <iframe id="export-iframe" width="500" height="360" src="https://ews.thirdweb.com/sdk/2022-08-12/embedded-wallet/export?clientId=XXXX" />
+                {/* <iframe id="export-iframe" width="500" height="360" src="https://ews.thirdweb.com/sdk/2022-08-12/embedded-wallet/export?clientId=XXXX" /> */}
               </div>
             ) : (
               <p>Please log in with you Google account or email</p>
