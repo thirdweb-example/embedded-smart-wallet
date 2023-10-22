@@ -5,12 +5,7 @@ import {
   embeddedWallet,
 } from "@thirdweb-dev/react";
 import "../styles/globals.css";
-import { factoryAddress } from "../const";
-
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "mumbai";
+import { activeChain, factoryAddress } from "../const";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
