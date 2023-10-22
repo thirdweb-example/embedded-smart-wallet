@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                 </Web3Button>
               </div>
             ) : (
-              <p>Please log in with you Google account or email</p>
+              <p>Please log in with your Google account or email</p>
             )}
             {address && isLoading ? <p>Loading Owned NFTs...</p> : null}
             {data?.map((nft) => (
