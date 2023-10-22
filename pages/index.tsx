@@ -7,14 +7,10 @@ import {
   ThirdwebNftMedia,
 } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import { NextPage } from "next";
-import { useConnectionStatus } from "@thirdweb-dev/react";
-import { use } from "react";
 import { editionDropAddress } from "../const";
 
 const Home: NextPage = () => {
-  const connectionStatus = useConnectionStatus();
   const address = useAddress();
   const { contract } = useContract(editionDropAddress);
   const { data, isLoading, error } = useOwnedNFTs(contract, address);
@@ -55,14 +51,13 @@ const Home: NextPage = () => {
             ) : (
               <p>Please log in with you Google account or email</p>
             )}
-            {data?.map((nft) => {
-              return (
-                <div className={styles.container} key={nft.metadata.id}>
-                  <ThirdwebNftMedia metadata={nft.metadata} />
-                  <p>{nft.metadata.name}</p>
-                </div>
-              );
-            })}
+            {address && isLoading ? <p>Loading Owned NFTs...</p> : null}
+            {data?.map((nft) => (
+              <div className={styles.container} key={nft.metadata.id}>
+                <ThirdwebNftMedia metadata={nft.metadata} />
+                <p>{nft.metadata.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
