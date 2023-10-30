@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             Gasless Transactions with <br />
             <span className={styles.gradientText0}>
               <a
-                href="https://thirdweb.com/"
+                href="https://thirdweb.com/embedded-wallets"
                 target="_blank"
                 rel="noopener noreferrer"
               >
