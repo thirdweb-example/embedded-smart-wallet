@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@thirdweb-dev/react": "0.0.0-dev-6f2cd2d-20231030231716",
-    "@thirdweb-dev/sdk": "0.0.0-dev-6f2cd2d-20231030231716",
+    "@thirdweb-dev/sdk": "^4.0.9",
     "ethers": "^5",
     "next": "^13",
     "react": "^18.2",

@@ -2489,7 +2489,7 @@
     qrcode "^1.5.3"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/sdk@0.0.0-dev-6f2cd2d-20231030231716", "@thirdweb-dev/sdk@4.0.9":
+"@thirdweb-dev/sdk@4.0.9", "@thirdweb-dev/sdk@^4.0.9":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/sdk/-/sdk-4.0.9.tgz#b0fe259d6df7f7aa89258371f816ac7cd5dd00ba"
   integrity sha512-2ndi2J0IjatEoofpaRbTysEO0ZlQl4o8HKD3RuNkDilFC4NSJGofix27txoOQt/S1AlUmV9YKp5acE1Mgi8YCA==
